@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>STG-X Consultancy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #000;
+      color: white;
+    }
+    header, footer {
+      border-bottom: 1px solid #333;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      color: #aaa;
+      font-size: 1.1rem;
+    }
+    .button {
+      background: white;
+      color: black;
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .card {
+      background: #111;
+      margin-bottom: 40px;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #333;
+    }
+    .timeline {
+      border-left: 2px solid #555;
+      margin-left: 15px;
+      padding-left: 20px;
+    }
+    .timeline-step {
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .timeline-step::before {
+      content: '';
+      position: absolute;
+      left: -11px;
+      top: 5px;
+      width: 12px;
+      height: 12px;
+      background: white;
+      border-radius: 50%;
+      border: 2px solid #555;
+    }
+    .why {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      color: #ccc;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      background: #111;
+      color: white;
+      border: 1px solid #555;
+    }
+    footer {
+      border-top: 1px solid #333;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="STG-X Logo" height="40" />
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero" style="text-align:center;">
+    <h1>Strategise. Transform. Grow.</h1>
+    <h2 style="color:#ccc;">Excellence in Financial & Business Advisory</h2>
+    <p>
+      STG-X Consultancy helps businesses build strong financial systems, maintain compliance, and implement strategies for sustainable growth. From setting up your accounting from scratch to achieving ISO 9001 certification, we provide the expertise, structure, and oversight your company needs to succeed.
+    </p>
+    <button class="button">Contact Us Today</button>
+    <button class="button" style="background:transparent; color:white; border:1px solid white;">Get a Quote</button>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      With an MBA in Finance, over 10 years of executive management experience, and proven board-level governance expertise, STG-X Consultancy was built to help companies achieve accuracy, compliance, and growth.
+    </p>
+    <p>
+      We specialise in financial reporting, strategic business planning, accounting system setup (Xero & more), and ensuring full compliance with PNG tax and regulatory frameworks.
+    </p>
+    <p>
+      Our approach combines boardroom strategic insight with hands-on operational expertise, delivering systems and processes that work in the real world—not just on paper.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+
+    <!-- Service 1 -->
+    <div class="card">
+      <h3>Accounting Structuring & Restructuring</h3>
+      <p>End-to-end setup for businesses with no accounting in place:</p>
+      <div class="timeline">
+        <div class="timeline-step">Business assessment</div>
+        <div class="timeline-step">Accounting software setup (Xero & more)</div>
+        <div class="timeline-step">Chart of accounts design</div>
+        <div class="timeline-step">Transaction capture procedures</div>
+        <div class="timeline-step">Bank & payment integration</div>
+        <div class="timeline-step">Historical data entry & opening balances</div>
+        <div class="timeline-step">Internal controls & approvals</div>
+        <div class="timeline-step">Tax code setup</div>
+        <div class="timeline-step">Staff training & SOPs</div>
+        <div class="timeline-step">Reporting framework (P&L, Balance Sheet, Cash Flow)</div>
+      </div>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="card">
+      <h3>Tax Compliance Management</h3>
+      <p>Full management of compliance with PNG’s Internal Revenue Commission (IRC):</p>
+      <div class="timeline">
+        <div class="timeline-step">GST registration, lodgement, and reconciliation</div>
+        <div class="timeline-step">Business Income Tax (BIT) returns</div>
+        <div class="timeline-step">Salaries & Wages Tax (SWT) calculation & lodgement</div>
+        <div class="timeline-step">Audit-ready record keeping</div>
+      </div>
+    </div>
+
+    <!-- Service 3 -->
+    <div class="card">
+      <h3>Financial Reporting</h3>
+      <p>Preparation of:</p>
+      <div class="timeline">
+        <div class="timeline-step">Profit & Loss Statements</div>
+        <div class="timeline-step">Balance Sheets</div>
+        <div class="timeline-step">Cash Flow Statements</div>
+      </div>
+    </div>
+
+    <!-- Service 4 -->
+    <div class="card">
+      <h3>Budget Formulation & Monitoring</h3>
+      <p>Creation and monitoring of:</p>
+      <div class="timeline">
+        <div class="timeline-step">Operations Budgets</div>
+        <div class="timeline-step">Capital Budgets</div>
+        <div class="timeline-step">Sales Budgets</div>
+        <div class="timeline-step">Variance analysis</div>
+      </div>
+    </div>
+
+    <!-- Service 5 -->
+    <div class="card">
+      <h3>ISO 9001:2015 Certification with KPI Development</h3>
+      <p>Support for ISO certification:</p>
+      <div class="timeline">
+        <div class="timeline-step">Preparation and documentation</div>
+        <div class="timeline-step">Development of KPIs</div>
+        <div class="timeline-step">Implementation of quality management processes</div>
+      </div>
+    </div>
+
+    <!-- Service 6 -->
+    <div class="card">
+      <h3>Strategic Business Planning</h3>
+      <p>Comprehensive annual business plans:</p>
+      <div class="timeline">
+        <div class="timeline-step">Strategic goal setting</div>
+        <div class="timeline-step">Operational & financial forecasting</div>
+        <div class="timeline-step">Milestones and performance metrics</div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="card">
+    <h2 style="text-align:center;">Why Choose STG-X Consultancy</h2>
+    <div class="why">
+      <div>• Accuracy: Audit-ready reporting and systems.</div>
+      <div>• Structure: Processes that prevent errors and improve efficiency.</div>
+      <div>• Compliance: Alignment with IRC and ISO standards.</div>
+      <div>• Growth-Focused: Strategies built to scale with your business.</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Get In Touch</h2>
+    <form>
+      <input type="text" placeholder="Your Name" />
+      <input type="email" placeholder="Email" />
+      <textarea rows="4" placeholder="Message"></textarea>
+      <button class="button">Send Message</button>
+    </form>
+    <p style="color:#888; margin-top:20px;">
+      📧 Email: [Insert Email] <br>
+      📞 Phone: [Insert Number] <br>
+      🌐 Website: [Insert Website]
+    </p>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> STG-X Consultancy. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById(\"year\").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
